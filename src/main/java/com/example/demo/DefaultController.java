@@ -16,12 +16,12 @@ public class DefaultController {
     }
 
     // vulnerable code sample
-    @GetMapping(value="/{name}")
-    public String hello(@PathVariable("name") String name) throws IOException, InterruptedException {
-        Runtime r = Runtime.getRuntime();
-        Process p = r.exec(name);
-        p.waitFor();
-        p.destroy();
-        return null;
-    }
+    // @GetMapping(value="/{name}")
+    // public String hello(@PathVariable("name") String name) throws IOException, InterruptedException {
+    //     Runtime r = Runtime.getRuntime();
+    //     Process p = r.exec(name);
+    //     p.waitFor();
+    //     p.destroy();
+    //     return null;
+    // }
 }
