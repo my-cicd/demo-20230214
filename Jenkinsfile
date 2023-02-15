@@ -1,7 +1,7 @@
 pipeline {
-//     agent {
-//         label 'ubuntu'
-//     }
+    agent {
+        label 'ubuntu'
+    }
 
 //     environment {
 //     }
